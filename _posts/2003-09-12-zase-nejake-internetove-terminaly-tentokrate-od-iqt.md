@@ -1,0 +1,17 @@
+---
+ID: 502
+post_title: >
+  Zase nějaké internetové terminály,
+  tentokráte od IQT
+author: Patrick Zandl
+post_excerpt: ""
+layout: post
+permalink: >
+  https://www.marigold.cz/item/zase-nejake-internetove-terminaly-tentokrate-od-iqt
+published: true
+post_date: 2003-09-12 09:10:00
+---
+<P>Internetové terminály Českého Telecomu dostanou prý konkurenci a to v podobě <STRONG>terminálů společnosti IQT</STRONG>. Lidé by přes ně&#160;měli mít možnost surfovat po internetu, posílat maily i SMS a dokonce i obchodovat. </P>
+<P>Terminál je vybaven monitorem s dotykovou obrazovkou, tiskárnou cenin (to fakt uvádí, asi&#160;to bude na tisk bankovek nebo vstupenek :)&#160;a tiskárnou ve formátu A4, čtečkou čárového kódu a hybridní čtečkou platebních karet. Výrobce chce také zabudovat skener a&#160;WiFi. Terminály budou napojeny na dohledové centrum, autorizační centrum platebních karet a aplikační servery poskytovatelů služeb. </P>
+<P>Terminály vyrábí <STRONG>Metra Blansko</STRONG> a snad se budou vyvážet i do zahraničí. Podobné terminály instaloval i Český Telecom, ale než jich stihl nainstalovat čtyřicítku, zažalovala ho společnost Český Internet, která prý má chráněný průmyslový vzor těch terminálů a chtěla je nabízet s Českými radiokomunikacemi. Do dneška ale, pokud vím, neinstalovala nic. </P>
+<P>IQT chce do konce roku instalovat 50 terminálů, příští rok pak chce počet zaokrouhlit na rovných tisíc. Uvidíme, zda se to podaří - osobně jsem trochu pesimista, nějak jsem si nevšiml, že by lidé ty terminály Telecomu používali, nedávno jsem jeden okukoval v Metropoli a narváno u něj nebylo. Já sám ho použití nemohu, nemaje Trick kartu :)</P>
