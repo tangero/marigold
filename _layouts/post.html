@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<article class="post detailed">
+  <h1>{{ page.title }}</h1>
+
+  <div>
+    <p class="author_title">{{site.author}}  ·
+{% assign m = page.date | date: "%-m" %}
+{{ page.date | date: "%-d." }}
+{% case m %}
+  {% when '1' %}leden
+  {% when '2' %}únor
+  {% when '3' %}březen
+  {% when '4' %}duben
+  {% when '5' %}květen
+  {% when '6' %}červen
+  {% when '7' %}červenec
+  {% when '8' %}srpen
+  {% when '9' %}září
+  {% when '10' %}říjen
+  {% when '11' %}listopad
+  {% when '12' %}prosinec
+{% endcase %}
+{{ page.date | date: "%Y" }}</p>
+    {% if page.last_modified_at %}
+    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Aktualizováno: {{ page.last_modified_at | date: "%-d.%-m.%Y" }})</p>
+    {% endif %}
+    <div class="post-tags">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+        <a href="{{site.baseurl}}/rubrika/#{{category|slugize}}">{{category}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="entry">
+
+    {{ content }}
+
+
+
+  </div>
+
+  <div class="posts">
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/zastupitelstvo"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/zastupitelstvo', 'popupwindow')"
+      class="embeddable-buttondown-form"
+    >
+      <label for="bd-email">Odebírat novinky emailem na:</label>
+      <input type="email" name="Vaše email adresa" id="bd-email"></input>
+      <input type="hidden" value="1" name="embed"></input>
+      <input type="submit" value="Přihlásit"></input>
+    </form>
+  </div>
+
+
+  <div>
+    <p><span class="share-box">Sdílejte článek:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
+    <p>
+    <div class="PageNavigation">
+      {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </div>
+    </p>
+
+  </div>
+
+  <!--<div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>-->
+
+  {% include disqus.html %}
+</article>
